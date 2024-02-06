@@ -1,0 +1,247 @@
+
+.skills{
+    display: flex;
+    /* background: linear-gradient(rgb(223, 194, 140),rgb(242, 158, 2)); */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:900px){
+  .skills{
+    position: unset;
+    z-index: 999;
+
+
+
+    .all{
+      position: unset;
+      justify-content: center;
+      padding: 20px;
+      
+    
+
+      .skill{
+        position: unset;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        transform: none;
+       
+        /* padding: 10vh; */
+        gap: 8vh;
+        margin-top: 10vh;
+
+        div{
+          position: unset;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img{
+            height: unset;
+            width: unset;
+            object-fit: cover;
+            transform: scale(0.5);
+            z-index: -1;
+          
+          }
+        }
+
+      }
+
+      .showSkills{
+        position: unset;
+        img{
+          object-fit: cover;
+          height: 30vh;
+          width: 35vw;
+          margin-bottom: 6vh;
+        }
+      }
+    }
+  }
+}
+
+
+.all {
+  margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 90vw;
+    height: 80vh;
+    box-shadow: 0px 5px 50px 10px rgb(252, 196, 93);
+
+  }
+  
+  .skill {
+    position: absolute;
+    /* top: %; */
+    left: 45%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    
+    
+
+    div{
+         /* animation: fadeInSkill 0.5s forwards; */
+        height: 5vh;
+        width: 5vw;
+        border-radius: 20px;
+        color:white;
+        font-size: larger;
+        font-weight: bold;
+        padding: 20px;
+        
+
+
+        img{
+          /* transform: scale(0.5); */
+          height: 15vh;
+          width: 15vw;
+          object-fit: contain;
+          /* padding: 20px; */
+        }
+
+        position: relative;
+        animation-duration: 3s;  
+        animation-delay: -1s;
+        animation-fill-mode: both;
+        /* background: linear-gradient(rgb(227, 212, 0),white); */
+    }
+
+   
+  }
+  
+ 
+  .showSkills {
+    position: relative;
+    top:35%;
+    opacity: 0;
+    animation: fadeInImage 1s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img{
+        height: 400px;
+        width: 400px;
+    }
+  }
+  
+  @keyframes fadeInSkill {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInImage {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+
+  .skill > div:nth-child(1) {
+    /* animation-name: example; */
+    top:50vh;
+    left: 7%;
+
+  }
+  .skill > div:nth-child(9) {
+      /* animation-name: example; */
+      top:50vh;
+      right: 7%;
+  }
+  .skill > div:nth-child(8) {
+    /* animation-name: example28; */
+    top:30vh;
+    right: 2%;
+
+  }
+  .skill > div:nth-child(2) {
+    /* animation-name: example28; */
+    top:30vh;
+    left: 2%;
+
+  }
+
+  .skill > div:nth-child(7) {
+    top:20vh;
+    right:1%
+   
+    /* animation-name: example37; */
+  }
+  .skill > div:nth-child(3) {
+    /* animation-name: example37; */
+    top:20vh;
+    left:1%
+  }
+
+  .skill > div:nth-child(6) {
+    /* animation-name: example46; */
+    top:8vh;
+    /* right: 1%; */
+    right: -1%;
+    z-index: 999;
+  }
+  .skill > div:nth-child(4) {
+    top:8vh;
+    left: -1%;
+    z-index: 999;
+
+    /* animation-name: example46; */
+  }
+  .skill > div:nth-child(5) {
+    /* animation-name: example5; */
+    top:3vh;
+  }
+  @keyframes example5 {
+    from {top: 0px;opacity: 0;}
+    to {top: 20px;  }
+  }
+
+    
+  @keyframes example46 {
+    from {top: 0px;opacity: 0;}
+    to {top: 40px; }
+  }
+
+
+
+  @keyframes example37 {
+    from {top: 0px;opacity: 0;}
+    to {top: 100px; opacity: 1; }
+  }
+
+  
+  @keyframes example28 {
+    from {top: 0px;opacity: 0;}
+    to {top: 160px; opacity: 1; }
+  }
+
+  @keyframes example {
+
+    from {top: 0px;opacity: 0;}
+     to {top: 300px; opacity: 1;}
+  }
+  

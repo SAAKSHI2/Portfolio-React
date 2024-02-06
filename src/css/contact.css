@@ -1,0 +1,204 @@
+.contact{
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    background: linear-gradient(rgb(229, 222, 222),rgb(154, 108, 23));
+
+   padding: 1%;
+
+
+    .social-media{
+        margin-top: 8rem;
+        width: 100vw;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        gap:4rem;
+        text-decoration: none;
+
+
+        
+        
+
+        div{
+            display: flex;
+            border-top: 2px solid lightgray;
+            width: 20%;
+            padding: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 2px;
+            transition: transform 0.3s ease;
+
+            p{
+                font-size: 30px;
+                color:white
+            }
+        }
+
+        div:hover{
+            background: linear-gradient(rgb(249, 244, 217),rgba(241, 189, 58, 0.73));
+            cursor: pointer;
+            border-radius: 40px;
+            transform: scale(1.1);
+
+            p{
+                color:#656262;
+                text-decoration: underline;
+            }
+        }
+       
+    
+
+        img{
+            height: 3rem;
+            border-radius: 50%;
+            object-fit: cover;
+            width: 3rem;   
+               
+            /* background: linear-gradient(rgb(82, 81, 81),rgb(155, 102, 4)); */
+      
+        }
+        img:hover{
+            cursor: pointer;
+        }
+    }
+
+
+
+    .contact-child{
+        
+        margin-top: 5vh;
+        display: flex;
+        /* border: 2px solid lightgray; */
+        padding: 4rem;
+        align-items: center;
+    justify-content: center;
+       
+
+
+        
+         p{
+            
+            color: #656262;
+            font-size: 5rem;
+            font-weight: bold;
+        }
+        
+
+    }
+
+    .fillForm{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap:3rem;
+        padding: 1% 5%;
+
+       
+    }
+    .sendMsg{
+        padding: 20px;
+        font-size: 2rem;
+        border: none;
+        /* background: none; */
+        background-color:white;
+        cursor: pointer;
+        width: 15rem ;
+        transition: transform 0.3s ease;
+        /* color:black; */
+        /* transition: background-color 6s ease-out,opacity -6s ease-out; */
+       
+    }
+    .sendMsg:hover{
+        opacity: 1;
+        transform: scale(1.1);
+        /* background-color: rgb(71, 70, 70); */
+       
+    }
+    
+
+    form{
+        display: flex;
+        flex-direction: row;
+        width: 76%;
+        flex-wrap: wrap;
+        gap: 3rem;
+        align-items: center;
+    justify-content: center;
+
+      
+        input{
+            height:4vh;
+            width: 20vw;
+            padding: 20px;
+            border: none;
+            border: 2px solid lightgray;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+      
+
+        textarea{
+            padding: 30px;
+            border: none;
+            border: 2px solid lightgray;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+
+       }
+
+
+}
+
+
+@media (max-width:900px) {
+    .contact{
+        margin-top: 20vh;
+
+        .contact-child{
+            text-align: center;
+        }
+        .social-media{
+            gap:2rem;
+            margin-top: 6rem;
+            div{
+                height: 10vh;
+                width: 15vw;
+                justify-content: center;
+                gap:1rem;
+                p{
+                    font-size: 1.3rem;
+                }
+                
+            }
+
+            img{
+                height: 5vh;
+                width: 6vw;
+            }
+
+        
+        }
+        .fillForm{
+            button{
+                height: 10vh;
+                width: 40vw;
+            }
+
+             form{
+                textarea{
+                    height: 20vh;
+                    width: 90vw;
+                }
+             }
+        }
+    }
+    
+}

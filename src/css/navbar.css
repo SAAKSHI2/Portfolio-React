@@ -1,0 +1,137 @@
+.navbar{
+    height: 10vh;
+    width: 94vw;
+    padding: 1.5vh 2.5vw;
+    display : flex;
+    justify-content: space-between;
+    position: fixed;
+     top: 0;
+    z-index: 1000;
+    /* transition: top 0.3s; */
+
+
+    .left-navbar{
+        flex:1;
+        align-items: center;
+        display: flex;
+        /* justify-content: center; */
+        /* gap:4rem; */
+
+        p{
+            font-size: 3rem;
+            font-weight: bold;
+            color: rgb(238, 171, 17);
+        }
+        span{
+            font-size: 20px;
+            color: rgb(247, 185, 14);
+        }
+
+        img{
+            /* height: 90%;
+            width: 18%; */
+            object-fit: contain;
+            height: 10vh;
+            width: 10vw;
+             
+            /* border: 1px solid lightgray; */
+            border-radius: 3rem;
+        }
+    }
+
+
+    .right-navbar{
+
+
+        flex:3;
+        /* justify-content: center; */
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        /* gap:1rem; */
+
+
+
+        ul{
+            display: flex;
+            gap:3rem;
+            /* margin-right: 3rem; */
+            list-style: none;
+            font-weight: 520;
+            font-size: 1.2rem;
+            color: rgb(68, 65, 58);
+
+            li:hover{
+                cursor: pointer;
+                color: #FCA61F;
+
+            }
+        }
+
+       
+    }
+
+    .right-navbar-mobile{
+        display: none;
+    }
+
+    .listIcon{
+        display: none ;
+    }
+
+    @media (max-width:900px) {
+        .listIcon{
+            display: flex;
+        }
+        .navbar{
+            justify-content: space-between;
+        }
+        .right-navbar{
+            flex-direction: column;
+            flex: 1 !important;
+            justify-content: flex-start;
+            align-items: flex-end;
+            margin-top: 3vh;
+
+        }
+        .right-navbar-list{
+            display:none;
+        }
+        .right-navbar-mobile{
+            display: flex !important;
+            flex-direction: column;
+
+            p{
+                position: absolute;
+                top:0;
+            }
+          
+            ul{
+
+                padding: 3vh;
+                border: 2px solid lightgray;
+               
+                flex-direction: column !important;
+                background-color: white;
+
+                li{
+                    border-bottom: 1px solid lightgray;
+                }
+            }
+
+        }
+
+        
+    }
+
+}
+
+
+@media (max-width:900px) {
+    .right-navbar{
+        display:none;
+        /* background-color: blue; */
+    }
+    
+}
